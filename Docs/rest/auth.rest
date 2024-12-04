@@ -1,0 +1,26 @@
+
+POST http://127.0.0.1:3001/auth/register
+Content-Type: application/json
+
+{
+    "name": "prueba",
+    "email": "antonymena1@yavirac.edu.ec",
+    "password": "123456"
+}
+
+
+### login sin conexion a BBD
+
+
+POST http://127.0.0.1:3001/auth/login
+Content-Type: application/json
+
+{
+    "name":"prueba2",
+    "email":"antonymena2@yavirac.edu.ec",
+    "password": "1234567"
+}
+
+### Users
+GET http://127.0.0.1:3001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MzI1ODIwNDMsImV4cCI6MTczMjU4MjEwM30.jTlUEFVNfTZWbiZPNeoegBuHyg7zxh_XdZ6V-TNl10I
